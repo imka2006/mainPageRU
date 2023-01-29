@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background: #0A0A0A;
+    font-family: "Inter";
+}
+
+.container {
+    max-width: 1215px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.lineBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+@media screen and (max-width:1230px) {
+    .container {
+        padding: 15px;
+    }
+}

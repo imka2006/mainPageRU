@@ -1,0 +1,111 @@
+.main {
+    margin: 72px 0 85px;
+    position: relative;
+    &-title {
+        font-weight: 400;
+        font-size: 32px;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 80px;
+        span {
+            color: #ff5c00;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &-content {
+        display: flex;
+        align-items: start;
+    }
+
+    &-block {
+        border: 2px solid #40ffe4;
+        box-shadow: inset -3px -3px 5px rgba(0, 224, 255, 0.4),
+            inset 3px 3px 5px rgba(0, 224, 255, 0.4);
+        backdrop-filter: blur(3px);
+        border-radius: 20px;
+        display: flex;
+        gap: 15px;
+        width: 753px;
+        position: relative;
+    }
+
+    &-name {
+        font-weight: 600;
+        font-size: 28px;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin: 24px 0 12px;
+    }
+
+    &-descr {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        color: #d1d1d1;
+    }
+
+    &-diograms {
+        position: absolute;
+        top: -50px;
+        left: 0;
+    }
+
+    &-vs {
+        position: absolute;
+        right: 125px;
+        bottom: -130px;
+        transform: translateX(100%);
+    }
+}
+@media screen and (max-width: 1180px) {
+    .main {
+        &-diograms {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 815px) {
+    .main {
+        &-block {
+            max-width: 100%;
+            width: auto;
+            padding-right: 110px;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .main {
+        &-block {
+            padding-right: 0px;
+        }
+    }
+}
+@media screen and (max-width: 590px) {
+    .main {
+        &-content {
+            width: 100%;
+        }
+        &-block {
+            overflow: hidden;
+            flex-direction: column;
+            padding-bottom: 40px;
+            width: 100%;
+        }
+        &-info {
+            text-align: center;
+        }
+        &-shere {
+            position: absolute;
+            left: 30px;
+            transform: translateY(15px);
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.mall {
+    font-family: "Inter";
+    margin-top: 100px;
+    &-text {
+        margin-bottom: 75px;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+    }
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        gap: 50px;
+    }
+
+    &-block {
+        border: 2px solid #40ffe4;
+        border-radius: 20px;
+        position: relative;
+    }
+    &-content {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 130px;
+    }
+    &-play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-online {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+        position: absolute;
+        bottom: 5px;
+        right: 17px;
+    }
+
+    &-circle {
+        background: #ff0000;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 32px;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-descr {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        color: #898989;
+    }
+
+    &-name {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        color: #777777;
+        margin-bottom: 10px;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &-game {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1093px) {
+    .mall {
+        margin-bottom: 90px;
+        &-wrapper {
+            justify-content: center;
+            flex-direction: column;
+        }
+        &-content {
+            flex-direction: column;
+            margin: 0;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .mall {
+        &-title {
+            font-size: 22px;
+        }
+        &-name,
+        &-descr {
+            font-size: 16px;
+        }
+    }
+}

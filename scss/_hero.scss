@@ -1,0 +1,70 @@
+.hero {
+    padding: 0 25px;
+
+    &-info {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+    }
+
+    &-life,
+    &-unlife {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &-people-counter {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    &-life-circle {
+        width: 20px;
+        height: 20px;
+        background: #00f828;
+        border-radius: 50%;
+    }
+
+    &-unlife-circle {
+        width: 20px;
+        height: 20px;
+        background: #686868;
+        border-radius: 50%;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 32px;
+        color: #ffffff;
+        max-width: 665px;
+        text-align: center;
+        margin: 53px auto 0;
+    }
+
+    &-descr {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff;
+        max-width: 395px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &-text {
+        color: #ff5c00;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .hero {
+        &-title {
+            font-size: 20px;
+        }
+    }
+}
